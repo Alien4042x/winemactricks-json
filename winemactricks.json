@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "categories": [
+    {
+      "id": "dll",
+      "name": "DLL Fixes"
+    },
+    {
+      "id": "config",
+      "name": "Game Config Tweaks"
+    },
+    {
+      "id": "registry",
+      "name": "Registry Overrides"
+    },
+    {
+      "id": "audio",
+      "name": "Audio Fixes"
+    },
+    {
+      "id": "misc",
+      "name": "Miscellaneous"
+    }
+  ],
+  "tweaks": [
+    {
+      "id": "grounded.mscoree_fix",
+      "title": "Grounded – mscoree.dll Fix",
+      "description": "Fix black screen during loading.",
+      "description_long": "Fixes a freeze or black screen that occurs while loading the game. This issue is caused by a missing .NET component required by the Unity engine used in Grounded. Setting mscoree.dll to native resolves the problem. Restart the bottle after applying the fix for changes to take effect.",
+      "category": "dll",
+      "applies_to": [
+        "Grounded.exe"
+      ],
+      "company": "Obsidian",
+      "platforms": [
+        "Steam"
+      ],
+      "conflicts_with": [],
+      "steps": [
+        "Set native override"
+      ],
+      "files": [
+        {
+          "dll": "mscoree",
+          "mode": "native"
+        }
+      ],
+      "version": "1.0.0",
+      "date": "2025-12-04"
+    }
+  ]
+}
